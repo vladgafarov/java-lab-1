@@ -2,13 +2,30 @@ import java.util.Scanner;
 
 public class Task3 {
     public static void main(String[] args) {
-        System.out.println("Enter int number:");
-        Scanner sc = new Scanner(System.in);
+        int a = 2;
+        int b = -4;
+        int c = 40;
 
-        if(sc.nextInt() > 10) {
-            System.out.println("More than 10");
+        int positive = 0;
+        int negative = 0;
+
+        if (a >= 0) {
+            positive +=1;
         } else {
-            System.out.println("Less or equal to 10");
+            negative +=1;
         }
+        if (b >= 0) {
+            positive +=1;
+        } else {
+            negative +=1;
+        }
+        if (c >= 0) {
+            positive +=1;
+        } else {
+            negative +=1;
+        }
+
+        System.out.println("Положительных: " + positive);
+        System.out.println("Отрицательных: " + negative);
     }
 }
